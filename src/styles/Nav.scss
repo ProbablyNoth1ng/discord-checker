@@ -1,0 +1,100 @@
+@import 'bootstrap';
+@import 'mixin';
+@import 'index';
+
+
+
+
+
+.logo__side {
+    display: flex;
+    .logo__side_text{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        .beta{
+            padding-top: -5px;
+            text-transform: uppercase;
+            color: darkcyan;
+            font-weight: 600;
+        }
+    }
+}
+.nav{
+    background-color: #111216;
+
+    
+
+    .nav__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+        width: 100%;
+
+    }
+
+
+     
+        .profile__side {
+            display: flex;
+            align-items: center;
+            .profile{
+                border: solid 1px darkcyan;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                padding: 5px 7px;
+                .profile__pfp{
+                    max-width: 30px;
+                    border-radius: 5px; 
+                    margin-right: 5px;
+                }
+                .profile__username{
+                    
+                }
+             
+            }
+            .logout{
+                border: solid 1px darkcyan;
+                border-radius: 5px;
+                padding: 7px 7px 5px 7px;
+                margin-left: 5px;
+                i{
+                    font-size: 25px;
+                  
+                }
+            }
+            .login{
+                
+                .login_link{
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: darkcyan;
+                }       
+                span{
+                    color: white;
+                }
+                i{
+                    margin-right: 5px;
+                    color: white;
+                }
+                .login_link:hover{
+                    border: solid 1px white;
+                    span {
+                        color: pink !important;
+                    }
+                }
+            }
+            .login:hover{
+               
+                
+
+            }
+        }
+      
+      
+   
+}

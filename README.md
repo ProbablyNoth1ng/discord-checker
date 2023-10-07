@@ -1,2 +1,1 @@
-# discord-checker
-Experiments with discord OAuth2
+Experiment with discord OAuth2 

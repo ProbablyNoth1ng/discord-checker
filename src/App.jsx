@@ -20,9 +20,7 @@ export default function App() {
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get('code');
   const [log,isLog] = useState(false)
-  
-  const requestTest =  axios.get('https://server-for-discord-checker.vercel.app/');
-  console.log(requestTest)
+ 
 
   useEffect(() => {
     async function fetchGuilds() {
@@ -34,7 +32,11 @@ export default function App() {
             setGuilds(response.data[1]);
             isLog(true)
             console.log(response.data[1])
+                
+   
         }
+        const requestTest =  axios.get('https://server-for-discord-checker.vercel.app/');
+        console.log(requestTest)
     }
 
     fetchGuilds();

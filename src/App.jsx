@@ -57,8 +57,8 @@ export default function App() {
   return (
     <div className="App">
     {log  ?    <> 
-                <Nav loggedIn={log} name={user.username != undefined ? user.username : user.global_name  } pfp={user.avatar} id={user.id} logOut={logOut}/>
-                <Main loggedIn={log} name={user.username != undefined ? user.username : user.global_name } servers={guilds ? guilds : ''} />
+                <Nav loggedIn={log} name={ user.global_name  } pfp={user.avatar} id={user.id} logOut={logOut}/>
+                <Main loggedIn={log} name={ user.global_name } servers={guilds ? guilds : ''} />
                 <Footer /> 
                </>
         :  

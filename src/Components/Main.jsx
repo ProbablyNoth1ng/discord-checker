@@ -12,7 +12,7 @@ export default function Main(props) {
     
    
 
-    if(!log || !guild) { 
+    if(!log || !props.servers) { 
         for(let i = 0; i < 13; i++){
             arr.push( <div className="community_card">
             <img src="#" alt="" className="community_pfp" />

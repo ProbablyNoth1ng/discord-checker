@@ -31,7 +31,7 @@ export default function App() {
             setUser(response.data[0]);
             setGuilds(response.data[1]);
             isLog(true)
-            console.log(response.data[1])
+            console.log(response.data[0])
                 
    
         }

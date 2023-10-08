@@ -35,8 +35,8 @@ export default function App() {
                 
    
         }
-        const requestTest =  axios.get('https://server-for-discord-checker.vercel.app/');
-        console.log(requestTest)
+        // const requestTest =  axios.get('https://server-for-discord-checker.vercel.app/');
+        // console.log(requestTest)
     }
 
     fetchGuilds();

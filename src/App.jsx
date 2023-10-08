@@ -9,6 +9,7 @@ import './styles/App.scss'
 import Nav from './Components/Nav'
 import Main from './Components/Main'
 import Footer from './Components/Footer'
+import { request } from './server'
 
 
 export default function App() {
@@ -20,13 +21,13 @@ export default function App() {
   const code = urlParams.get('code');
   const [log,isLog] = useState(false)
   
-
-
+  const requestTest =  axios.get('https://server-for-discord-checker.vercel.app/');
+  console.log(requestTest)
 
   useEffect(() => {
     async function fetchGuilds() {
         if (code) {
-            const response = await axios.get('http://localhost:5000/auth/callback', {
+            const response = await axios.get('https://server-for-discord-checker.vercel.app/auth/callback', {
                 params: { code: code }
             });
             setUser(response.data[0]);

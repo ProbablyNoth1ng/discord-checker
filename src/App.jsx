@@ -52,7 +52,7 @@ export default function App() {
 
 
   
-  user ? console.log(guilds[0].name) : ''
+  // user ? console.log(guilds[0].name) : ''
   // user ? console.log(guilds.sort()) : '';
   return (
     <div className="App">

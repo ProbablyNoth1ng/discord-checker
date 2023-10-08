@@ -9,7 +9,7 @@ import './styles/App.scss'
 import Nav from './Components/Nav'
 import Main from './Components/Main'
 import Footer from './Components/Footer'
-import { request } from './server'
+
 
 
 export default function App() {

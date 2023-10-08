@@ -58,7 +58,7 @@ export default function App() {
     <div className="App">
     {log  ?    <> 
                 <Nav loggedIn={log} name={user.username ? user.username : user.global_name  } pfp={user.avatar} id={user.id} logOut={logOut}/>
-                <Main loggedIn={log} name={user.username ? user.username : user.global_name } servers={guilds} />
+                <Main loggedIn={log} name={user.username ? user.username : user.global_name } servers={guilds ? guilds : ''} />
                 <Footer /> 
                </>
         :  

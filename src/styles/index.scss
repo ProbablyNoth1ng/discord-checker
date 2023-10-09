@@ -28,7 +28,7 @@ body{ -ms-overflow-style: none; }
     text-decoration: none;
 }
 .main{
-    flex-grow: 1;
+    flex: 1 1 auto;
     background: rgb(9,18,26);
     background: linear-gradient(180deg, rgba(9,18,26,1) 0%, rgba(23,69,89,1) 100%);
 }
@@ -37,5 +37,9 @@ body{ -ms-overflow-style: none; }
 } 
 .inter{
     font-family: 'Inter';
+    
+}
+.without_guilds{
+    font-size: clamp(12px,1vw,40px);
     
 }

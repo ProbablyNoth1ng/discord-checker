@@ -55,7 +55,7 @@ export default function App() {
   // user ? console.log(guilds[0].name) : ''
   // user ? console.log(guilds.sort()) : '';
   return (
-    <div className="App">
+    <>
     {log  ?    <> 
                 <Nav loggedIn={log} name={ user.username } pfp={user.avatar} id={user.id} logOut={logOut}/>
                 <Main loggedIn={log} name={ user.username  } servers={guilds ? guilds : ''} />
@@ -68,7 +68,7 @@ export default function App() {
                  <Footer /> 
             </>
     }
-    </div>    
+    </>    
   )
 }
 
